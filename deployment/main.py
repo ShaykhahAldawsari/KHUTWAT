@@ -47,9 +47,9 @@ if option == "الصفحة الرئيسية":
 elif option == "📋 (10 Qs) النسخة المصغرة":
     st.info("👍 تم اختيار النسخة المصغرة! 🎯")
     # تشغيل الملف الخاص بالنسخة المصغرة
-    exec(open("survey_mini.py", encoding="utf-8").read())
+    exec(open("deployment/survey_mini.py", encoding="utf-8").read())
 
 elif option == "📜 (50 Qs) النسخة الكاملة":
     st.info("👍 تم اختيار النسخة الكاملة! 📚")
     # تشغيل الملف الخاص بالنسخة الكاملة
-    exec(open("survey.py", encoding="utf-8").read())
+    exec(open("deployment/survey.py", encoding="utf-8").read())
