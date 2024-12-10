@@ -50,4 +50,4 @@ elif option == "📋 (10 Qs) النسخة المصغرة":
 
 elif option == "📜 (50 Qs) النسخة الكاملة":
     st.info("👍📚 تم اختيار النسخة الكاملة!")
-    exec(open("survey.py", encoding="utf-8").read())
+    exec(open("deployment/survey.py", encoding="utf-8").read())
