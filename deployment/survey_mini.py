@@ -81,7 +81,7 @@ if "current_question" not in st.session_state:
 with st.sidebar:
      st.markdown(
         """
-        هذا الاختبار التفاعلي يقيم سمات شخصيتك بناءً على النموذج:
+        هذا الاختبار التفاعلي يقيم سمات شخصيتك بناءً على:
         -  Extroversion 
         -  Agreeableness 
         -  Conscientiousness 
