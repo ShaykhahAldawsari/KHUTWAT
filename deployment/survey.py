@@ -129,6 +129,7 @@ with st.sidebar:
         جاوب بصدق علشان تعرف نمط شخصيتك!
         """
     )
+    
 
 current_index = st.session_state.current_question
 total_questions = len(questions)
@@ -152,7 +153,7 @@ else:
     features = np.array(st.session_state.responses).reshape(1, -1)
 
     try:
-        with open('big5_cluster_model.pkl', 'rb') as file:
+        with open('deployment/big5_cluster_model.pkl', 'rb') as file:
             model = pickle.load(file)
 
         prediction = model.predict(features)

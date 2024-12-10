@@ -114,9 +114,10 @@ else:
     features = np.array(st.session_state.responses).reshape(1, -1)
 
     try:
-        with open('mini_big5_cluster_model_scaler.pkl', 'rb') as file:
+        with open('deployment/mini_big5_cluster_model_scaler.pkl', 'rb') as file:
             scaler = pickle.load(file)
-        with open('mini_big5_cluster_model.pkl', 'rb') as file:
+
+        with open('deployment/mini_big5_cluster_model.pkl', 'rb') as file:
             model = pickle.load(file)
 
         features_scaled = scaler.transform(features)
